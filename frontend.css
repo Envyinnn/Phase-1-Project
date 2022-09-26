@@ -19,3 +19,8 @@ body {
 h1 {
     text-align: center;
 }    
+#description {
+    height: 200px;
+    width: 300px;
+}
+  
