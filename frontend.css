@@ -1,0 +1,16 @@
+body {
+ margin: 0;
+ font-family: monospace;   
+}
+
+#mn-header {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    padding: 1rem;
+}
+
+#mn-header img {
+    height: 6rem;
+    width: auto;
+}
