@@ -8,9 +8,14 @@ body {
     justify-content: center;
     height: 7rem;
     padding: 1rem;
+    background-color: brown;
 }
 
 #mn-header img {
     height: 6rem;
     width: auto;
 }
+
+h1 {
+    text-align: center;
+}    
