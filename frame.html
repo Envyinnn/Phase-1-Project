@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>    
-    <title>Minnesota Animals</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="frontend.css"/>
+    <title>Minnesota Animals</title>
 </head>
+
 <body>
-    <div id="mn-header">
+    <!-- Heading section with MN state logo and weather API -->
+<header class="header">
         <img
         src="https://m.media-amazon.com/images/I/61eRlHRNYHS._AC_SX679_.jpg"
         alt="mn-header"
         />
+    
+    <div id="weatherapi">
+        <img
+        src="http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=xml"
+        alt="weather"
+        />
     </div>
-<h1>Minnesota Animal Directory</h1>    
+</header>  
+    <!-- Beginning of inner content -->
+<main>
+<h1>Minnesota Animal Directory</h1>  
+<h2>Add To Directory</h2>  
+<h3>Animal:</h3>
 <input id="name" 
           type="text"
           name="name"
@@ -21,29 +36,30 @@
           class="input-text"
 />
 <br/>
-<input id="description"
-          type="text"
-          name="image"
-          value=""
-          placeholder="Enter Animal Description"
-          class="input-text"
-/>
+<h3>Description:</h3>
+<textarea id = "description" name = "description" rows = 20 cols = 20 placeholder="Add Description">
+</textarea>    
 <br/>
 <input id="submitter"
           type="submit"
           name="submit"
           value="Add Animal"
           class="submit"
-/>          
+/>     
+<script src = "backend.js"></script>     
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>
