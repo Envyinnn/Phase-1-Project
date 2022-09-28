@@ -1,4 +1,4 @@
-# Phase-1-Project
+# Phase-1-Project // Minnesota Animal Directory
 
 This application is to help provide a directory for some animals in Minnesota.
 
