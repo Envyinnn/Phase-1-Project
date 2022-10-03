@@ -4,7 +4,7 @@ const main = document.getElementById('main')
 
 // Page Load
 document.addEventListener('DOMContentLoaded', () => {
-    startCountdown()
+    return;
 })
     function pageReload(){
         main.innerHTML = ''
