@@ -1,3 +1,5 @@
+{
+    "animals" :
 [
   {
     "id" : "1",
@@ -19,3 +21,4 @@
     "image" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg"
   }
 ]
+}
