@@ -1,6 +1,14 @@
-let addAnimal = false;
+// Database Link
+const baseLink = 'http://localhost:3000/animals'
+const main = document.getElementById('main')
 
-document.addEventListener("DOMContentLoaded", () => {
-    return;
-    
+// Page Load
+document.addEventListener('DOMContentLoaded', () => {
+    startCountdown()
 })
+    function pageReload(){
+        main.innerHTML = ''
+    }
+fetch('http://localhost:3000/animals')    
+    .then(res => console.log(res));
+
