@@ -1,6 +1,7 @@
 // Database Link
 const baseLink = 'http://localhost:3000/animals'
 const main = document.getElementById('main')
+const addAnimal = document.getElementById('submitter')
 
 // Page Load
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function pageReload(){
         main.innerHTML = ''
     }
-fetch('http://localhost:3000/animals')    
-    .then(res => console.log(res));
 
+    // Event Listeners
+
+addAnimal.addEventListener('click',fetchAnimals)
+
+function fetchAnimals() {
+    fetch (baseLink)
+    .then (res => res.json)
+    .then (pageReload())
+    
+}
