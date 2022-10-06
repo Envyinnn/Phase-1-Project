@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Phase-1-Project // Minnesota Animal Directory
 
 This application is to help provide a directory for animals in Minnesota.
@@ -10,4 +10,4 @@ This application consists of HTML, CSS and javascript.
 # Phase-1-Project
 
 Application purpose is to add animals into a directory that are in Minnesota
->>>>>>> e1c35db (adding in better headers)
+
