@@ -69,6 +69,3 @@ function renderOneAnimal(animals){
 
 
 
-
-// Unique event listeners with unique callbacks - Having 3 different callbacks for 3 different event listeners (3 click event listeners will only count as 1 distinct event listener. You would also need 2 others such as change, mouseover, keydown, etc)
-// Your project must implement at least one instance of array iteration using available array methods (map, forEach, filter, etc). Manipulating your API data in some way should present an opportunity to implement your array iteration.
