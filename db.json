@@ -2,7 +2,6 @@
     "animals" :
 [
   {
-    "id" : "1",
     "title" : "Deer",
     "content" : "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/deer-279091.jpg?h=7929e2b5&itok=pD15M75M",
     "details" : "Brown animal with four legs and sometimes horns"
@@ -10,7 +9,6 @@
   }
   ,
   {
-    "id" : "2",
     "title" : "Mouse",
     "content" : "https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2022-09/wild-mouse-580235.jpg?h=a866998c&itok=rqbbwDUE",
     "details" : "Small 4 legged animal. Grey like color and can hear well"
@@ -18,7 +16,6 @@
   }
   ,
   {
-    "id" : "3",
     "title" : "Beaver",
     "content" : "https://www.humanesociety.org/sites/default/files/styles/1660_max/public/2021-01/beaver-beauty-442121.jpg?itok=bVHJjJZ8",
     "details" : "Brown with large flat tail. Eats wood and makes lodges"

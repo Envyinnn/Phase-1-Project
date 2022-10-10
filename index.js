@@ -1,9 +1,28 @@
+// Listener
+document.querySelector('#submitter').addEventListener('submit', handleSubmit);
+
+// Submit Handler
+function handleSubmit (e){
+    e.preventDefault()
+    let animalType = {
+        title:e.target.title.value,
+        content:e.target.content.value,
+        details:e.target.details.value,
+    }
+    renderOneAnimal(animalType)
+    addingAnimal(animalType)
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     fetchAnimals()
 
 })
 
+
+
+
+// Fetch Request
 function fetchAnimals(){
  fetch ('http://localhost:3000/animals')
     .then(res => res.json())
@@ -13,10 +32,25 @@ function fetchAnimals(){
         animals.innerHTML = renderAllAnimals(data)
     })
 }
+function addingAnimal(animalType){
+    
+    fetch('http://localhost:3000/animals', {
+        method: 'POST',
+        headers: {
+            "Content-Type": 'application/json'
+        },
+        body:JSON.stringify(animalType)
+    })
+    .then(res => res.json())
+    .then(animals => console.log(animals))
+}
 
 function renderAllAnimals(animals){
    return animals.map(td => renderOneAnimal(td)).join("")
 }
+
+
+// Animal List
 
 function renderOneAnimal(animals){
     return `
@@ -27,7 +61,6 @@ function renderOneAnimal(animals){
             <center><h3> ${animals.details}</h3>
         </div>
         <div id=animal-description>
-        <p>
     </div>
     `
 }
@@ -35,8 +68,7 @@ function renderOneAnimal(animals){
 
 
 
-//With JSON server, you have control over the content and structure of the data. This video (https://youtu.be/lamIJhsDNIE)  goes over JSON Server
 
-// Use at least 3 unique event-listeners that enable interactivity. Think search or filter functionality, toggling dark/light mode, upvoting posts, etc. Each listener should listen for a DIFFERENT TYPE OF EVENT. **YOU MUST USE addEventListener() to add your event**
+
 // Unique event listeners with unique callbacks - Having 3 different callbacks for 3 different event listeners (3 click event listeners will only count as 1 distinct event listener. You would also need 2 others such as change, mouseover, keydown, etc)
 // Your project must implement at least one instance of array iteration using available array methods (map, forEach, filter, etc). Manipulating your API data in some way should present an opportunity to implement your array iteration.
