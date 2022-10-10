@@ -4,21 +4,21 @@
   {
     "id" : "1",
     "title" : "Deer",
-    "image" : "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/deer-279091.jpg?h=7929e2b5&itok=pD15M75M"
+    "content" : "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/deer-279091.jpg?h=7929e2b5&itok=pD15M75M"
 
   }
   ,
   {
     "id" : "2",
     "title" : "Mouse",
-    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg/1200px-%D0%9C%D1%8B%D1%88%D1%8C_2.jpg"
+    "content" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg/1200px-%D0%9C%D1%8B%D1%88%D1%8C_2.jpg"
 
   }
   ,
   {
     "id" : "3",
     "title" : "Beaver",
-    "image" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg"
+    "content" : "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg"
   }
 ]
 }
