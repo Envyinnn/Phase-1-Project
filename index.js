@@ -1,3 +1,4 @@
+
 // Listener
 document.querySelector('#submitter').addEventListener('submit', handleSubmit);
 
@@ -64,6 +65,7 @@ function renderOneAnimal(animals){
     </div>
     `
 }
+
 
 
 

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylsheet" href="lightmode.css"/>
+    <link rel="stylesheet" id="dark" href="nightmode.css"/>
     <title>Minnesota Animals</title>
 </head>
 
@@ -18,7 +20,10 @@
 </header>  
     <!-- Beginning of inner content -->
 <main>
-<h1>Minnesota Animal Directory</h1>  
+<h1>Minnesota Animal Directory</h1> 
+
+<button id= "darkmode">Dark Mode</button> 
+
 <center><h2>Add To Directory</h2></center> 
 <center><h3>Animal:</h3></center>
 <form>
@@ -28,9 +33,8 @@
           value=""
           placeholder="Enter Animal Name"
           class="input-text"
-          
-<center><input id = "image-link" name = "imageLink" placeholder="Add Image Link"></center>  
 
+<center><input id = "image-link" name = "imageLink" placeholder="Add Image Link"></center>  
 <center><input id="submitter"
           type="submit"
           name="submit"
@@ -41,6 +45,22 @@
 <div id="animal-list">
     <p>Animal List</p>
 </div>
+
+<script>
+    document.getElementById("darkmode").addEventListener('click', function(){
+        const css = document.getElementById("dark");
+        const darkModeButton = document.getElementById("darkmode");
+
+        if (darkModeButton.innerHTML == 'Dark Mode') {
+            css.setAttribute('href', 'styles/lightmode.css');
+            darkModeButton.innerHTML = 'Light Mode';
+        }
+        else {
+            css.setAttribute('href', 'styles/nightmode.css');
+            darkModeButton.innerHTML = 'Dark Mode';
+        }
+    });
+</script>
 
 <script src = "index.js"></script>     
 
