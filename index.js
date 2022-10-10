@@ -22,8 +22,10 @@ function renderOneAnimal(animals){
     return `
     <div class="animal-card" id ="${animals.id}">
         <div class="animal-frame">
-            <h1 class = "center-text">${'GET', URL , animals.content}</h1>
+            <center><h4 class = "center-text"><img src = ${animals.content} alt = "Failed to load" style = "width:500px;height:300px;"></h4><br></br></center>
         </div>
+        <div id=animal-description>
+        <p>
     </div>
     `
 }
