@@ -1,4 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    fetchAnimals()
 
+})
 // Listener
 document.querySelector('#submitter').addEventListener('submit', handleSubmit);
 
@@ -13,15 +16,6 @@ function handleSubmit (e){
     renderOneAnimal(animalType)
     addingAnimal(animalType)
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    fetchAnimals()
-
-})
-
-
-
 
 // Fetch Request
 function fetchAnimals(){
@@ -38,7 +32,8 @@ function addingAnimal(animalType){
     fetch('http://localhost:3000/animals', {
         method: 'POST',
         headers: {
-            "Content-Type": 'application/json'
+            "Content-Type": 'application/json',
+            "Accept" : 'application/json',
         },
         body:JSON.stringify(animalType)
     })
