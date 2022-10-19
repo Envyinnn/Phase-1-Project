@@ -7,6 +7,18 @@ Minnesota animal directory is a website that will contain types of animals with 
 
 Users will be able to put in an animal name, accompanied with a link of a picture of the animal to provide vision evidence of it. When the new animal is submitted, it should populate at the bottom of the list and continue to grow as more animals are added in.
 
+### How to use
+1. Start by getting to a directory on your computer to save the file in using a terminal.
+2. Once at the desired directory, type "git clone" followed by git@github.com:Envyinnn/Phase-1-Project.git
+3. Once the file has been cloned to your local directory follow up the downloaded clone content in the terminal with "code ." if you have this shortcut installed. (this works on MAC's)
+
+3a. To install shortcut: 
+
+Launch VS Code.
+Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+
+Restart the terminal to use the new command.
+
 ### Functions within the application
 The application will pull from the db.json file which holds the animals listed on the page.
 
