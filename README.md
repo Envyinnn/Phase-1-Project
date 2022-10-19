@@ -12,7 +12,7 @@ Users will be able to put in an animal name, accompanied with a link of a pictur
 2. Once at the desired directory, type "git clone" followed by git@github.com:Envyinnn/Phase-1-Project.git
 3. Once the file has been cloned to your local directory follow up the downloaded clone content in the terminal with "code ." if you have this shortcut installed. (this works on MAC's)
 
-3a. To install shortcut: 
+ 3a. To install shortcut: 
 
 Launch VS Code.
 Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
