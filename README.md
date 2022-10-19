@@ -19,7 +19,7 @@ Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shel
 
 Restart the terminal to use the new command.
 
-### Functions within the application
+## Functions within the application
 The application will pull from the db.json file which holds the animals listed on the page.
 
 The submit button is there to add into the db.json file when submitting new animals.
