@@ -112,3 +112,17 @@ function addingAnimal(animalType){
     // help render new animal    
     })
 }
+
+document.getElementById("darkmode").addEventListener('click', function(){
+    const css = document.getElementById("dark");
+    const darkModeButton = document.getElementById("darkmode");
+
+    if (darkModeButton.innerHTML == 'Dark Mode') {
+        css.setAttribute('href', 'lightmode.css');
+        darkModeButton.innerHTML = 'Light Mode';
+    }
+    else {
+        css.setAttribute('href', 'nightmode.css');
+        darkModeButton.innerHTML = 'Dark Mode';
+    }
+});
