@@ -22,9 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelector('#submitter').addEventListener('submit', handleSubmit);
 
 // mouse over h1 will change color to orange
-document.querySelector('h1').addEventListener('mouseover', function(e){
-    console.log(e)
-})
+const colorSwap = document.querySelector('h1');
+    colorSwap.addEventListener('mouseover', function handleMouseOver() {
+        colorSwap.style.color = 'orange';
+    });
 
 let form = document.getElementById("post")
 form.addEventListener("submit", function(e){
@@ -54,7 +55,7 @@ function actualSubmit() {
     xhr.open("POST", "http://localhost:3000/animals", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(animal_dict));
-    preventDefault();
+   
     
 }
 
