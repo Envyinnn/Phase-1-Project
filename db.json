@@ -1,24 +1,31 @@
 {
-    "animals" :
-[
-  {
-    "title" : "Deer",
-    "content" : "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/deer-279091.jpg?h=7929e2b5&itok=pD15M75M",
-    "details" : "Brown animal with four legs and sometimes horns"
-
-  }
-  ,
-  {
-    "title" : "Mouse",
-    "content" : "https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2022-09/wild-mouse-580235.jpg?h=a866998c&itok=rqbbwDUE",
-    "details" : "Small 4 legged animal. Grey like color and can hear well"
-
-  }
-  ,
-  {
-    "title" : "Beaver",
-    "content" : "https://www.humanesociety.org/sites/default/files/styles/1660_max/public/2021-01/beaver-beauty-442121.jpg?itok=bVHJjJZ8",
-    "details" : "Brown with large flat tail. Eats wood and makes lodges"
-  }
-]
+  "animals": [
+    {
+      "title": "Deer",
+      "content": "https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/deer-279091.jpg?h=7929e2b5&itok=pD15M75M",
+      "details": "Brown animal with four legs and sometimes horns"
+    },
+    {
+      "title": "Mouse",
+      "content": "https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2022-09/wild-mouse-580235.jpg?h=a866998c&itok=rqbbwDUE",
+      "details": "Small 4 legged animal. Grey like color and can hear well"
+    },
+    {
+      "title": "Beaver",
+      "content": "https://www.humanesociety.org/sites/default/files/styles/1660_max/public/2021-01/beaver-beauty-442121.jpg?itok=bVHJjJZ8",
+      "details": "Brown with large flat tail. Eats wood and makes lodges"
+    },
+    {
+      "title": "Moose",
+      "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Moose_superior.jpg/1920px-Moose_superior.jpg",
+      "id": 4369,
+      "details": "generic description"
+    },
+    {
+      "title": "cow",
+      "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/2880px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
+      "id": 9433,
+      "details": "generic description"
+    }
+  ]
 }
