@@ -20,37 +20,32 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 // Listener
 document.querySelector('#submitter').addEventListener('submit', handleSubmit);
-preventDefault();
 
 // mouse over h1 will change color to orange
-const colorSwap = document.querySelector('h1');
-    colorSwap.addEventListener('mouseover', function handleMouseOver() {
-        colorSwap.style.color = 'orange';
-    });
-
+document.querySelector('h1').addEventListener('mouseover', function(e){
+    console.log(e)
+})
 
 let form = document.getElementById("post")
-form.addEventListener("submit", function(e){
-    e.preventDefault();
+form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
 });
 
 var randomInteger = function (pow) {
-    return Math.floor(Math.random() * pow);
+	return Math.floor(Math.random() * pow);
 };
 
 
-function actualSubmit() {
+function actuallySubmit () {
     let form = document.querySelector('#post');
     let data = new FormData(form);
-    let details = "Your description!"
+    let details = "generic description"
     let animal_dict = {}
     let rand10000 = randomInteger(10000);
-    for(let [theKey, theValue] of data) {
-        animal_dict[theKey] = theValue;
-        console.log(theKey);
-        console.log(theValue);
-        preventDefault();
-        
+    for (let [thekey, thevalue] of data) {
+        animal_dict[thekey] = thevalue;
+        console.log(thekey);
+        console.log(thevalue);
     }
     animal_dict["id"] = rand10000
     animal_dict["details"] = details
@@ -58,10 +53,17 @@ function actualSubmit() {
     xhr.open("POST", "http://localhost:3000/animals", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(animal_dict));
-   
-    
+    // fetch('http://localhost:3000/animals', {
+    //     method: 'POST',
+    //     headers: {
+    //         "Content-Type": 'application/json',
+    //         "Accept" : 'application/json',
+    //     },
+    //     body: animal_dict
+    // })
 }
 
+// Submit Handler
 function handleSubmit (e){
 
     e.preventDefault()
@@ -69,7 +71,7 @@ function handleSubmit (e){
         title:e.target.title.value,
         content:e.target.content.value,
     }
-   
+    //renderOneAnimal(animalType)
     addingAnimal(animalType)
 }
 
@@ -81,14 +83,14 @@ function fetchAnimals(){
         console.log(data)
         animalList = data
         console.log("animalList",animalList)
-        let  i = 0;
+        let i = 0;
         while (i < animalList.length) {
-        console.log(animalList[i]);
-        let ani = animalList[i];
-        document.getElementById("animal-list").innerHTML = document.getElementById("animal-list").innerHTML + renderOneAnimal(ani)
-        i++;
+            console.log(animalList[i]);
+            let ani = animalList[i];
+            document.getElementById("animal-list").innerHTML = document.getElementById("animal-list").innerHTML + renderOneAnimal(ani)
+            i++;
         }
-    let newDiv = animalList.forEach(renderOneAnimal);    
+        let newdiv = animalList.forEach(renderOneAnimal);       
     })
 }
 
@@ -106,23 +108,7 @@ function addingAnimal(animalType){
     })
     .then(res => res.json())
     .then(animals => {
-        console.log(animals)   
+        console.log(animals)
+    // help render new animal    
     })
 }
-
-document.getElementById("darkmode").addEventListener('click', function(){
-    const css = document.getElementById("dark");
-    const darkModeButton = document.getElementById("darkmode");
-
-    if (darkModeButton.innerHTML == 'Dark Mode') {
-        css.setAttribute('href', 'lightmode.css');
-        darkModeButton.innerHTML = 'Light Mode';
-    }
-    else {
-        css.setAttribute('href', 'nightmode.css');
-        darkModeButton.innerHTML = 'Dark Mode';
-    }
-});
-
-
-
