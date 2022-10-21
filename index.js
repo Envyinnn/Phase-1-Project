@@ -64,9 +64,9 @@ function actuallySubmit () {
 }
 
 // Submit Handler
-function handleSubmit (e){
+function handleSubmit (evt){
 
-    e.preventDefault()
+    evt.preventDefault()
     let animalType = {
         title:e.target.title.value,
         content:e.target.content.value,
